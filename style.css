@@ -302,6 +302,8 @@ footer {
   .p-education__Description {
     width: 100%;
     margin: 0 auto;
+    font-size: 18px;
+    text-align: left;
   }
 
   /* career */
