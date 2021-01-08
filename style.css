@@ -145,7 +145,6 @@ img {
   border-radius: 10%;
   box-shadow: 10px 10px 10px #030202;
   width: 400px;
-  width: 100%;
 }
 
 .p-careerList__description {
@@ -210,7 +209,6 @@ img {
   border-radius: 10%;
   width: 400px;
   background-color: #15F9FD;
-  width: 100%;
 }
 
 .p-designList__description {
@@ -312,12 +310,15 @@ footer {
     margin-top: 50px;
   }
   
+  .p-careerList__photo img {
+    width: 100%;
+  }
+  
   .c-btn {
     width: 20%;
   }
 
   /* design */
-
   
   .p-designList {
     display: block;
@@ -329,6 +330,10 @@ footer {
 
   .p-designList__photo {
     text-align: center;
+  }
+  
+  .p-designList__photo img {
+    width: 100%;
   }
 }
 
