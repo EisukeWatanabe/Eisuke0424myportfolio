@@ -269,7 +269,8 @@ footer {
   }
 
   .p-hero__mainTitle {
-    font-size: 30px;
+    font-size: 26px;
+    letter-spacing: 1px;
   }
 
   .p-section {
