@@ -312,6 +312,14 @@ footer {
     text-align: center;
   }
 
+  .p-careerList__title {
+    font-size: 22px;
+  }
+
+  .p-careerList__description {
+    font-size: 18px;
+  }  
+  
   .p-careerList li:nth-child(n+2) {
     margin-top: 50px;
   }
