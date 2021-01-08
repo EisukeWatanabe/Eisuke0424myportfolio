@@ -422,6 +422,10 @@ footer {
     margin-right: 40px;
   }
 
+  br {
+    display: none;
+  }  
+  
 /* design */
 
   .p-designList__text {
