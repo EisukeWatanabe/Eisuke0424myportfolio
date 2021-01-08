@@ -422,7 +422,7 @@ footer {
     margin-right: 40px;
   }
 
-  br {
+  .p-careerList__title br {
     display: none;
   }  
   
