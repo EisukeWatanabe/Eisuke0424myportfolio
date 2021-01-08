@@ -332,6 +332,10 @@ footer {
     text-align: center;
   }
 
+  .p-designList__description {
+    font-size:18px;
+  }
+  
   .p-designList__photo {
     text-align: center;
   }
