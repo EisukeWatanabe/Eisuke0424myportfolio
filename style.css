@@ -184,7 +184,6 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  color: #fff;
 }
 
 .p-designList__title {
