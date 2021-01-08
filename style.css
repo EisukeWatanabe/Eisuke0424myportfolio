@@ -94,6 +94,7 @@ img {
   height: 3px;
   background-color: #FE13AD;
   border-radius: 50%;
+  width:100%;
 }
 
 /* introduction */
@@ -144,6 +145,7 @@ img {
   border-radius: 10%;
   box-shadow: 10px 10px 10px #030202;
   width: 400px;
+  width: 100%;
 }
 
 .p-careerList__description {
@@ -204,11 +206,11 @@ img {
   background-image: linear-gradient(to left, #A526F6 0%, #009efd 100%);
 }
 
-
 .p-designList__photo img {
   border-radius: 10%;
   width: 400px;
   background-color: #15F9FD;
+  width: 100%;
 }
 
 .p-designList__description {
