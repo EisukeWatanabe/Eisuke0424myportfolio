@@ -165,8 +165,8 @@ img {
   display: inline-block;
   padding: 1.2em 1.6em;
   text-decoration: none;
-  background: #FE13AD;
-  color: #fff;
+  background: #2BEAAE;
+  color: #000;
   border-radius: 3px;
   font-size: 12px;
   transition: all 1s;
@@ -174,7 +174,7 @@ img {
 }
 
 .c-btn:hover {
-  background-color: #ECD281;
+  background-color: #EA0BA8;
 }
 
 /* design */
