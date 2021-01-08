@@ -38,7 +38,7 @@ img {
 .p-hero {
   position: relative;
   height: 100vh;
-  background-image: url("../assets/images/bg_hdr.jpg");
+  background-image: url("bg_hdr.jpg");
   background-size: cover;
   z-index: 1
 }
