@@ -131,9 +131,6 @@ img {
   font-size: 25px;
   line-height: 3;
   color:#fff;
-  background-color: #29107D;
-  box-shadow: 10px 10px 10px #000;
-  border-radius: 10%;
 }
 
 /* career */
@@ -308,6 +305,8 @@ footer {
     margin: 0 auto;
     font-size: 18px;
     text-align: left;
+    display: flex;
+    justify-content: center;
   }
 
   /* career */
