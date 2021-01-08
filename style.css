@@ -206,11 +206,13 @@ img {
   background-image: linear-gradient(to left, #A526F6 0%, #009efd 100%);
 }
 
+.p-designList__photo {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .p-designList__photo img {
   border-radius: 10%;
   width: 400px;
-  background: rgb(46,43,236);
-  background: linear-gradient(90deg, rgba(46,43,236,1) 0%, rgba(246,170,126,1) 100%);
 }
 
 .p-designList__description {
