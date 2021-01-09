@@ -360,6 +360,8 @@ footer {
 
   .p-header {
     justify-content: flex-end;
+    background: rgba(36,138,91,0.3);
+    background: linear-gradient(90deg, rgba(36,138,91,0.3) 0%, rgba(25,161,228,0.3) 64%, rgba(91,13,219,0.3) 100%);
   }
 
   .p-header__toggle {
