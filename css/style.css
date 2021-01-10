@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 img {
   width: 100%;
 }
@@ -22,6 +23,7 @@ img {
   padding: 10px 20px;
   align-items: center;
   z-index: 3;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .p-header__logo {
@@ -38,7 +40,7 @@ img {
   height: 100vh;
   background-image: url("../assets/images/bg_hdr.jpg");
   background-size: cover;
-  z-index: 1
+  z-index: 1;
 }
 
 .p-hero__mainTitle {
@@ -47,13 +49,14 @@ img {
   left: 50%;
   transform: translate(-50%,-50%);
   color: #FFF;
-  letter-spacing: 5px;
+  letter-spacing: 9px;
   display: flex;
   z-index: 2;
-  font-size: 50px;
+  font-size: 60px;
   white-space: nowrap;
   text-align: center;
   line-height: 150%;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .p-section {
@@ -73,8 +76,9 @@ img {
 }
 
 .p-section__title {
-  font-size: 35px;
-  letter-spacing: 2px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .p-section__description {
@@ -185,6 +189,8 @@ img {
   margin-top: 40px;
   position: relative;
   padding: 1rem .5rem;
+  letter-spacing: 3px;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .p-designList__title:after {
@@ -267,12 +273,16 @@ footer {
   }
 
   .p-hero__mainTitle {
-    font-size: 26px;
-    letter-spacing: 1px;
+    font-size: 24px;
+    letter-spacing: 5px;
   }
 
   .p-section {
     padding: 80px 15px;
+  }
+
+  .p-section__title {
+    font-size: 30px;
   }
 
   .p-section__description {
