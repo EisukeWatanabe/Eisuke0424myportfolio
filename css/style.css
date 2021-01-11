@@ -274,7 +274,7 @@ footer {
 
   .p-hero__mainTitle {
     font-size: 24px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
 
   .p-section {
@@ -287,6 +287,11 @@ footer {
 
   .p-section__description {
     text-align: left;
+    font-size: 16px;
+  }
+
+  .p-section__description br {
+    display: none;
   }
 
   /* introduction */
@@ -327,7 +332,7 @@ footer {
   }
 
   .p-careerList__description {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .p-careerList li:nth-child(n+2) {
@@ -353,7 +358,7 @@ footer {
   }
 
   .p-designList__description {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .p-designList__photo {
