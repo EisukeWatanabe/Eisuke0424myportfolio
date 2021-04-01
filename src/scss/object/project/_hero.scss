@@ -19,11 +19,11 @@
   }
   &__mainTitle {
     position: absolute;
-    top: 38%;
+    top: 39%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: $colorWhite;
-    letter-spacing: 9px;
+    letter-spacing: 10px;
     display: flex;
     z-index: 2;
     @include setFontSize(40);
