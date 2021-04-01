@@ -15,12 +15,12 @@ module.exports = (env, argv) => {
       filename: PRODUCTION
         ? 'assets/javascripts/bundle[hash].js'
         : 'assets/javascripts/bundle.js',
-      path: path.join(__dirname, 'public'),
+      path: path.join(__dirname, 'docs'),
     },
     plugins: [
       new CleanWebpackPlugin([
-        'public/assets/stylesheets',
-        'public/assets/javascripts',
+        'docs/assets/stylesheets',
+        'docs/assets/javascripts',
       ]),
       new MiniCssExtractPlugin({
         filename: PRODUCTION
@@ -87,22 +87,10 @@ module.exports = (env, argv) => {
             },
           ],
         },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                presets: [['@babel/preset-env', { modules: false }]],
-              },
-            },
-          ],
-        },
       ],
     },
     devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
+      contentBase: path.resolve(__dirname, 'docs'),
       port: 8080,
     },
   }
