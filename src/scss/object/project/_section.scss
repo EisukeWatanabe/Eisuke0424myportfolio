@@ -33,11 +33,11 @@
   .p-section {
     padding: 100px 30px;
     &__title {
-      @include setFontSize(18);
+      @include setFontSize(19);
     }
     &__description {
       text-align: left;
-      @include setFontSize(8);
+      @include setFontSize(9);
     }
     &__description {
       br {

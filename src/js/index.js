@@ -11,7 +11,7 @@ $(() => {
 
   //メインタイトルの表示
   const fadeIn = () => {
-    $('.js-fadeIn').animate({left:'50%'}, 1800);
+    $('.js-fadeIn').fadeIn(2000);
   }
 
   //セクションへスクロール
@@ -27,7 +27,7 @@ $(() => {
 
   //スクロールアニメーション
   const scrollAnimation = () => {
-    $('.js-scroll-trigger').each(function() {
+    $('.js-scrollTrigger').each(function() {
       const position = $(this).offset().top,
             scroll = $(window).scrollTop(),
             windowHeight = $(window).height();
@@ -66,7 +66,7 @@ $(() => {
   const init = () => {
     fadeIn();
     // animation呼び出し
-    if ($('.js-scroll-trigger').length) {
+    if ($('.js-scrollTrigger').length) {
       scrollAnimation();
     }
     $('.p-section__title').each(slideSection);

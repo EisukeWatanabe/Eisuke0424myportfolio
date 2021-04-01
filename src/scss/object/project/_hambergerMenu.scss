@@ -3,8 +3,8 @@
   flex-direction: column;
   position: fixed;
   right: -100%;
-  width: 100%;
-  height: 100vh;
+  width: 60%;
+  height: 75vh;
   background-color: $colorHamberger;
   transition: .3s;
   text-decoration: none;
@@ -14,7 +14,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    @include setFontSize(15);
+    @include setFontSize(13);
     letter-spacing: 4px;
     &:hover {
       background-color: $colorHover;
