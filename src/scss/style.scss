@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap");
+
+//========================================
+//Foundation
+//========================================
+
+@import "foundation/base";
+@import "foundation/reset";
+@import "foundation/var";
+
+//========================================
+//Layout
+//========================================
+
+@import "layout/*.scss";
+
+//========================================
+//Object
+//========================================
+
+// ----------------------
+// Component
+// ----------------------
+
+@import "object/component/*.scss";
+
+// ----------------------
+// project
+// ----------------------
+
+@import "object/project/*.scss";
+
+// ----------------------
+// Utility
+// ----------------------
+
+@import "object/utility/*.scss";

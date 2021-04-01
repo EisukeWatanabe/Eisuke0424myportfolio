@@ -1,0 +1,43 @@
+.p-educationList {
+  img {
+    display: inline-block;
+    width: 250px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px $colorBlack;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@include sp {
+
+  .p-educationList {
+    &__item {
+      display: block;
+      text-align: center;
+      img {
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+    }
+    &__Description {
+      width: 100%;
+      margin: 0 auto;
+      @include setFontSize(14);
+      text-align: left;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@include pc {
+  .p-educationList {
+    &__item {
+      padding-bottom: 70px;
+    }
+  }
+}

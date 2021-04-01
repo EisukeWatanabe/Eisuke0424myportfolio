@@ -1,0 +1,51 @@
+.c-btn {
+  position: fixed;
+  top: 32px;
+  right: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  &__line {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: $colorWhite;
+    transition: .2s;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $colorWhite;
+      transition: .5s;
+    }
+    &::before {
+      transform: translateY(-16px);
+    }
+    &::after {
+      transform: translateY(16px);
+    }
+    &.open {
+      background-color: transparent;
+      &::before , &::after {
+        content: "";
+        background-color: $colorBlack;
+        transition: .2s;
+      }
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@include pc {
+  .c-btn {
+    display: none;
+  }
+}

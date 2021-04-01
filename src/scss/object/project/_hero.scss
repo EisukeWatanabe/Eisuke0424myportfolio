@@ -1,0 +1,45 @@
+.p-hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/bg_hdr.jpg");
+  background-size: cover;
+  background-position: 40%;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: '';
+    background: inherit;
+    filter: blur(4px);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: -1;
+  }
+  &__mainTitle {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $colorWhite;
+    letter-spacing: 9px;
+    display: flex;
+    z-index: 2;
+    @include setFontSize(33);
+    white-space: nowrap;
+    text-align: center;
+    line-height: 150%;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+}
+
+@include sp {
+
+  .p-hero{
+    &__mainTitle {
+      @include setFontSize(15);
+      letter-spacing: 3px;
+    }
+  }
+}

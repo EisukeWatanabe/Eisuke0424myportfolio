@@ -1,0 +1,32 @@
+.p-introductionList {
+  text-align: center;
+  &--item {
+    img {
+      border-radius: 20%;
+      width: 200px;
+      box-shadow: 10px 10px 10px $colorBlack;
+      margin-top: 90px;
+    }
+  }
+}
+
+@include sp {
+
+  .p-introductionList {
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
+  }
+}
+
+@include pc {
+
+  .p-introductionList {
+    margin-top: 100px;
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}

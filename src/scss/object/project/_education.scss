@@ -1,0 +1,19 @@
+.p-education {
+  &__Description {
+    @include setFontSize(13);
+    line-height: 3;
+    color: $colorWhite;
+    text-align: left;
+  }
+}
+
+@include sp {
+
+  .p-education {
+    &__Description {
+      display: flex;
+      justify-content: center;
+      @include setFontSize(9);
+    }
+  }
+}

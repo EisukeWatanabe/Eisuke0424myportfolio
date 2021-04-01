@@ -1,0 +1,16 @@
+.js-fadeIn {
+  left: 0px;
+}
+
+.u-fade-type-up{
+  transform: translateY(50px);
+  transition: .6s;
+  opacity: 0;
+}
+
+.u-fade-type-up.is-active{
+  transition: .6s;
+  transform: translateY(0);
+  opacity: 1;
+}
+

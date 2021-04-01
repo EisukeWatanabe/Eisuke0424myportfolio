@@ -1,0 +1,28 @@
+// breakpoint
+$pc: 769px; // PC
+$sp: 768px;  // スマホ
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+// SET FONT SIZE
+@mixin setFontSize($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// COLOR
+$colorBlack: #222;
+$colorLine: #05E6B9;
+$colorWhite: #fff;
+$colorHamberger: rgba(2, 63, 74, 0.824);
+$colorHover: rgba(16,246,251, .2);
+$colorYellow: #FFD600;

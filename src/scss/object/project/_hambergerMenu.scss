@@ -1,0 +1,52 @@
+.p-hambergerMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: $colorHamberger;
+  transition: .3s;
+  text-decoration: none;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    @include setFontSize(15);
+    letter-spacing: 4px;
+    &:hover {
+      background-color: $colorHover;
+      transition: .3s;
+    }
+  }
+  &__link {
+    color: $colorWhite;
+    text-decoration: none;
+  }
+  &.open {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+}
+
+@include pc {
+
+  .p-hambergerMenu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+  }
+  .p-hambergerMenu-link {
+    color: $colorBlack;
+    display: block;
+  }
+
+}

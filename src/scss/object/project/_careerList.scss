@@ -1,0 +1,75 @@
+.p-careerList {
+  &__title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  &__photo {
+    img {
+      border-radius: 10%;
+      box-shadow: 10px 10px 10px $colorBlack;
+      width: 250px;
+    }
+  }
+  &__description {
+    margin-top: 35px;
+    line-height: 1.8;
+    text-align: left;
+    color: $colorWhite;
+  }
+  &__btn {
+    margin-top: 1em;
+  }
+}
+
+@include sp {
+
+  .p-careerList {
+    text-align: center;
+    &__title {
+      @include setFontSize(11);
+      margin-top: 50px;
+    }
+    &__description {
+      @include setFontSize(8);
+    }
+    li {
+      &:nth-child(n+2) {
+        margin-top: 50px;
+      }
+    }
+    &__photo {
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@include pc {
+
+  .p-careerList {
+    li {
+      display: flex;
+      margin-top: 200px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+    }
+    &__text {
+      margin-left: 40px;
+      padding-top: 10px;
+      &:nth-child(even) {
+        margin-right: 40px;
+      }
+    }
+    &__title {
+      br {
+      display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.p-header {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  padding: 10px 20px;
+  align-items: center;
+  z-index: 3;
+  font-family: 'Darker Grotesque', sans-serif;
+  &__list {
+    letter-spacing: 4px;
+  }
+}

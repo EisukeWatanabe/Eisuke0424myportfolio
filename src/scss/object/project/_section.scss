@@ -1,0 +1,55 @@
+.p-section {
+  color: $colorWhite;
+  &__text {
+    position: relative;
+    text-align: center;
+  }
+  &__title {
+    @include setFontSize(25);
+    letter-spacing: 5px;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+  &__titleLine {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 3px;
+    background-color: $colorLine;
+    box-shadow: 1px 1px 10px 1px rgb(4, 189, 186);
+    width: 100%;
+    border-radius: 100%;
+  }
+  &__description {
+    margin-top: 120px;
+    @include setFontSize(10);
+    line-height: 1.8;
+  }
+}
+
+@include sp {
+
+  .p-section {
+    padding: 100px 30px;
+    &__title {
+      @include setFontSize(18);
+    }
+    &__description {
+      text-align: left;
+      @include setFontSize(8);
+    }
+    &__description {
+      br {
+      display: none;
+      }
+    }
+  }
+}
+
+@include pc {
+
+  .p-section {
+    padding: 150px 50px;
+  }
+}
