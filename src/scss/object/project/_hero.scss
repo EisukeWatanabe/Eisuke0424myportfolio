@@ -19,14 +19,14 @@
   }
   &__mainTitle {
     position: absolute;
-    top: 39%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: $colorWhite;
     letter-spacing: 9px;
     display: flex;
     z-index: 2;
-    @include setFontSize(33);
+    @include setFontSize(40);
     white-space: nowrap;
     text-align: center;
     line-height: 150%;
@@ -38,7 +38,7 @@
 
   .p-hero{
     &__mainTitle {
-      @include setFontSize(15);
+      @include setFontSize(16);
       letter-spacing: 3px;
     }
   }
