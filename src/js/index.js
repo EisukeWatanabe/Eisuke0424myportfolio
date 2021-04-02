@@ -40,9 +40,7 @@ $(() => {
     });
   }
 
-
   //セクションを横からスライド
-
   function slideSection() {
     const $win = $(window),
           $winH = $win.height(),
@@ -65,7 +63,6 @@ $(() => {
   //初期発火
   const init = () => {
     fadeIn();
-    // animation呼び出し
     if ($('.js-scrollTrigger').length) {
       scrollAnimation();
     }
