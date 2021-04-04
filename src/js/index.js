@@ -16,11 +16,11 @@ $(() => {
 
   //セクションへスクロール
   const scrollSection = (e) => {
-    const $this = $(e.currentTarget);
-    let speed = 1100,
-        adjust = 0,
-        href= $this.attr('href'),
-        position = $(href).offset().top + adjust;
+    const $this = $(e.currentTarget),
+          speed = 1100,
+          adjust = 0,
+          href= $this.attr('href'),
+          position = $(href).offset().top + adjust;
     $('html, body').stop().animate({scrollTop:position}, speed, 'swing');
     return false;
   }
