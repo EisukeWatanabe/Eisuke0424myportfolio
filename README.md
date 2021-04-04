@@ -12,7 +12,7 @@
 * jsのES6(ES2015)をES5へ変換（Babelでトランスパイル）＆バンドル　(src/js/ → docs/javascripts/)
 * バンドルしたJavascriptを圧縮(minify)
 * 外部モジュールからjQueryファイルの読み込み
-* ESLintによるコードの検証とPrettierによるコード整形
+* ESLintとPrettierを連携させてコードの検証と整形を行う
 
 #### SCSS
 * SCSSをCSSに変換＆バンドル （src/scss/ →　docs/stylesheets/)
