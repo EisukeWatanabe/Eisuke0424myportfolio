@@ -4,7 +4,8 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const globImporter = require('node-sass-glob-importer')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { Z_FIXED } = require('zlib');
 
 module.exports = (env, argv) => {
   const PRODUCTION = argv.mode === 'production'
@@ -104,6 +105,9 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'eslint-loader',
+          options: {
+            fix: true,
+          }
         },
       ],
     },
