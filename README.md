@@ -12,6 +12,7 @@
 * jsのES6(ES2015)をES5へ変換（Babelでトランスパイル）＆バンドル　(src/js/ → docs/javascripts/)
 * バンドルしたJavascriptを圧縮(minify)
 * 外部モジュールからjQueryファイルの読み込み
+* ESLintによるコードの検証とPrettierによるコード整形
 
 #### SCSS
 * SCSSをCSSに変換＆バンドル （src/scss/ →　docs/stylesheets/)
@@ -22,7 +23,7 @@
 #### HTML
 * CSSとJavascriptを読み込んだHTMLを出力　(src/html/index.html →　docs/html/index.html) 
 
-ビルドコマンド
+#### ビルドコマンド
 * yarn start  (開発環境用)　→　ローカルサーバーが立ち上がる
 * yarn prod   (本番用）　　 →　本番資材をdocs配下に出す
 <br><br><br>
